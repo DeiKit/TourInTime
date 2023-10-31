@@ -1,22 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Отримайте елемент заголовка
+    // Отримую елемент заголовка
     var header = document.querySelector("header h1");
 
-    // Створіть масив із різними шрифтами
+    // Створюю масив із різними шрифтами
     var fonts = ["'Comic Sans MS', cursive", "Arial, sans-serif", "Impact, fantasy", "cursive"];
 
-    // Ініціалізуйте лічильник для вибору шрифта
+    // Ініціалізую лічильник для вибору шрифта
     var fontIndex = 0;
 
-    // Додайте обробник події для кліку на заголовок
+    // Додаю обробник події для кліку на заголовок
     header.addEventListener("click", function() {
-        // Змініть шрифт заголовка
+        // Змінюю шрифт заголовка
         header.style.fontFamily = fonts[fontIndex];
 
-        // Збільшіть лічильник індексу шрифту, якщо він не виходить за межі масиву
+        // Збільшую лічильник індексу шрифту, якщо він не виходить за межі масиву
         fontIndex = (fontIndex + 1) % fonts.length;
     });
 
-    // Задайте початковий шрифт заголовка
+    // Задаю початковий шрифт заголовка
     header.style.fontFamily = fonts[fontIndex];
 });
