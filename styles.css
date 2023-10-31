@@ -1,0 +1,73 @@
+ /* Загальні стилі */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+}
+
+#menu {
+    flex-grow: 1;
+}
+
+#content {
+    flex-grow: 3;
+    padding: 20px;
+}
+
+/* Стилі для навігаційного меню */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: Helvetica;
+    color: #1c254f;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Стилі для таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Зображення у списку */
+ol li img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стилі для контактної інформації та правил і умов */
+#contact, #terms, #social {
+    margin-top: 20px;
+     color: #1c254f;
+      text-decoration: Helvetica;
+}
+
+/* Заголовки для контактної інформації та правил і умов */
+#contact > div, #terms > div, #social > div {
+    font-weight: bold;
+}
